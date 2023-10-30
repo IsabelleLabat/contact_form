@@ -21,13 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // -- requête au back en local
-    const response = await axios.post("http://localhost:3000/form", {
-      firstname,
-      lastname,
-      subject,
-      email,
-      message,
-    });
+    const response = await axios.post(
+      "https://site--contact-form--7zwqb2nbgsj7.code.run/",
+      {
+        firstname,
+        lastname,
+        subject,
+        email,
+        message,
+      }
+    );
     // -- Affichage de la response dans la console du navigateur
     console.log(response);
   });
