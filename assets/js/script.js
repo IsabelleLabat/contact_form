@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // -- requête au back en local
     const response = await axios.post(
-      "https://site--contact-form--7zwqb2nbgsj7.code.run/",
+      "https://site--contact-form--7zwqb2nbgsj7.code.run/form",
       {
         firstname,
         lastname,
